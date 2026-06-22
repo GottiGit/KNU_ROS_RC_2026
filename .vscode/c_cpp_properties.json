@@ -1,0 +1,32 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "${workspaceFolder}/.vscode/browse.vc.db",
+        "limitSymbolsToIncludedHeaders": false
+      },
+      "includePath": [
+        "/home/aa/turtlebot3_ws/install/turtlebot3_fake_node/include/**",
+        "/home/aa/turtlebot3_ws/install/turtlebot3_msgs/include/**",
+        "/home/aa/turtlebot3_ws/install/turtlebot3_gazebo/include/**",
+        "/home/aa/turtlebot3_ws/install/open_manipulator_x_gui/include/**",
+        "/home/aa/turtlebot3_ws/install/micro_ros_agent/include/**",
+        "/home/aa/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces/include/**",
+        "/home/aa/turtlebot3_ws/install/dynamixel_hardware_interface/include/**",
+        "/home/aa/turtlebot3_ws/install/dynamixel_sdk/include/**",
+        "/home/aa/turtlebot3_ws/install/dynamixel_interfaces/include/**",
+        "/home/aa/robot_ws/install/user_interface/include/**",
+        "/home/aa/robot_ws/install/tb_interface/include/**",
+        "/home/aa/robot_ws/install/ros2_aruco_interfaces/include/**",
+        "/opt/ros/humble/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ros2",
+      "intelliSenseMode": "gcc-x64",
+      "compilerPath": "/usr/bin/gcc",
+      "cStandard": "gnu11",
+      "cppStandard": "c++17"
+    }
+  ],
+  "version": 4
+}
