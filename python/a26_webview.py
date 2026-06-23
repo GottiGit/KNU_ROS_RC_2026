@@ -1,6 +1,7 @@
 # sudo apt update
 # sudo apt install python3-pip
 # pip install pywebview
+# text.html 을 만들려고 하는데 자바스크립트 코드하고 css가 포함된 메모를 저장하고 불러오는 코드를 작성해줘
 from pathlib import Path
 
 import webview
