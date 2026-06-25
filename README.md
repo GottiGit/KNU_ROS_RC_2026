@@ -62,5 +62,5 @@
 - 4교시: 클래스 변수
 - 5교시: 클래스 메소드
 - 6교시: destructor, del, gc.collect
-- 7교시:
-- 8교시:
+- 7교시: property, setter, getter, 상속
+- 8교시: 모듈 및 배포, random 표준 모듈
