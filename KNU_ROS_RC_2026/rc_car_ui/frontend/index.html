@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>RC Car Control</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="app">
+    <header class="app__header">
+      <h1>RC Car Control</h1>
+      <span id="conn-status" class="status status--unknown">연결 확인 중...</span>
+    </header>
+
+    <section class="panel panel--drive">
+      <h2>주행 제어</h2>
+      <div class="dpad">
+        <button id="btn-forward" class="dpad__btn dpad__btn--up" data-direction="forward">▲</button>
+        <button id="btn-left" class="dpad__btn dpad__btn--left" data-direction="left">◀</button>
+        <button id="btn-stop" class="dpad__btn dpad__btn--stop" data-direction="stop">■</button>
+        <button id="btn-right" class="dpad__btn dpad__btn--right" data-direction="right">▶</button>
+        <button id="btn-backward" class="dpad__btn dpad__btn--down" data-direction="backward">▼</button>
+      </div>
+      <div class="current-direction">
+        현재 방향: <strong id="current-direction">stop</strong>
+      </div>
+    </section>
+
+    <section class="panel panel--speed">
+      <h2>속도 제어</h2>
+      <input type="range" id="speed-slider" min="0" max="100" value="0" />
+      <div class="speed-value"><span id="speed-value">0</span> %</div>
+    </section>
+
+    <section class="panel panel--sensors">
+      <h2>센서 데이터</h2>
+      <div class="sensor-grid">
+        <div class="sensor-card">
+          <span class="sensor-card__label">거리</span>
+          <span class="sensor-card__value"><span id="sensor-distance">--</span> cm</span>
+        </div>
+        <div class="sensor-card">
+          <span class="sensor-card__label">배터리</span>
+          <span class="sensor-card__value"><span id="sensor-battery">--</span> %</span>
+        </div>
+        <div class="sensor-card">
+          <span class="sensor-card__label">방위(Yaw)</span>
+          <span class="sensor-card__value"><span id="sensor-yaw">--</span> °</span>
+        </div>
+      </div>
+      <div class="sensor-updated">마지막 갱신: <span id="sensor-updated">--</span></div>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,7 +1,7 @@
 from pathlib import Path
 
 import webview
-from backend.server import CounterApiServer
+from KNU_ROS_RC_2026.uv_test.click.backend.server import CounterApiServer
 
 BASE_DIR = Path(__file__).resolve().parent
 FRONTEND_DIR = BASE_DIR / "frontend"

@@ -1,6 +1,6 @@
 import datetime
 
-from a01_hello import main as hello_main
+from KNU_ROS_RC_2026.python.a01_hello import main as hello_main
 
 
 def main():

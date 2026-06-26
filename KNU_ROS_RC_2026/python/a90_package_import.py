@@ -1,7 +1,7 @@
 # import test_package.module_a
 # import test_package.module_b
 # from test_package.module_a import Module_a, module_a_fuc, module_var_a
-from test_package import *
+from KNU_ROS_RC_2026.python.test_package import *
 
 
 def main():

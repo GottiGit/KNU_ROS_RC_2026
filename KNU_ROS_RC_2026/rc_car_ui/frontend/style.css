@@ -1,0 +1,146 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, "Segoe UI", "Malgun Gothic", sans-serif;
+  background: #11151c;
+  color: #e7ecf3;
+}
+
+.app {
+  max-width: 480px;
+  margin: 0 auto;
+  padding: 20px 18px 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.app__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.app__header h1 {
+  font-size: 18px;
+  margin: 0;
+}
+
+.status {
+  font-size: 12px;
+  padding: 4px 10px;
+  border-radius: 10px;
+}
+
+.status--unknown { background: #3a3f4b; color: #c5c9d2; }
+.status--ok      { background: #1f5d3a; color: #8fe3b3; }
+.status--fail     { background: #5d1f1f; color: #e38f8f; }
+
+.panel {
+  background: #1b212c;
+  border: 1px solid #2a3140;
+  border-radius: 14px;
+  padding: 18px;
+}
+
+.panel h2 {
+  margin: 0 0 14px;
+  font-size: 14px;
+  color: #91a3bd;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+/* --- 방향 패드 --- */
+.dpad {
+  display: grid;
+  grid-template-columns: 64px 64px 64px;
+  grid-template-rows: 64px 64px;
+  justify-content: center;
+  gap: 8px;
+}
+
+.dpad__btn {
+  border: none;
+  border-radius: 12px;
+  background: #28313f;
+  color: #e7ecf3;
+  font-size: 22px;
+  cursor: pointer;
+  transition: background 0.15s ease, transform 0.1s ease;
+}
+
+.dpad__btn:hover { background: #344050; }
+.dpad__btn:active { transform: scale(0.95); }
+
+.dpad__btn--up { grid-column: 2; grid-row: 1; }
+.dpad__btn--left { grid-column: 1; grid-row: 2; }
+.dpad__btn--stop { grid-column: 2; grid-row: 2; background: #5d2424; }
+.dpad__btn--stop:hover { background: #743030; }
+.dpad__btn--right { grid-column: 3; grid-row: 2; }
+.dpad__btn--down { grid-column: 2; grid-row: 3; }
+
+.dpad__btn.is-active {
+  background: #2f6fed;
+}
+
+.current-direction {
+  margin-top: 14px;
+  text-align: center;
+  font-size: 13px;
+  color: #91a3bd;
+}
+
+.current-direction strong {
+  color: #e7ecf3;
+}
+
+/* --- 속도 --- */
+#speed-slider {
+  width: 100%;
+}
+
+.speed-value {
+  margin-top: 8px;
+  text-align: center;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+/* --- 센서 --- */
+.sensor-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.sensor-card {
+  background: #11161f;
+  border: 1px solid #2a3140;
+  border-radius: 10px;
+  padding: 10px 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+}
+
+.sensor-card__label {
+  font-size: 11px;
+  color: #91a3bd;
+}
+
+.sensor-card__value {
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.sensor-updated {
+  margin-top: 12px;
+  text-align: center;
+  font-size: 11px;
+  color: #5e6b80;
+}
