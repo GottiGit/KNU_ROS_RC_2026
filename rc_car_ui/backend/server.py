@@ -25,7 +25,7 @@ from urllib import error, request
 from flask import Flask, Response, jsonify, request as flask_request, send_from_directory
 from werkzeug.serving import BaseWSGIServer, make_server
 
-from KNU_ROS_RC_2026.rc_car_ui.backend.hardware import car_controller
+from .hardware import car_controller
 
 RC_CAR_PORT = 49500
 SENSOR_PUSH_INTERVAL_SEC = 1.0
