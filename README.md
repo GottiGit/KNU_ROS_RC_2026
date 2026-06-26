@@ -73,7 +73,7 @@
 
 - 1교시: os, sys, urllib, time
 - 2교시:
-- 3교시:
+- 3교시: frame, package
 - 4교시:
 - 5교시:
 - 6교시:
