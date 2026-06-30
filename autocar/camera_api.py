@@ -95,7 +95,7 @@ def video():
                 time.sleep(0.05)
                 continue
 
-            jpg = encode_jpeg(frame, quality=75)
+            jpg = encode_jpeg(frame, quality=60)
 
             if jpg is None:
                 continue
