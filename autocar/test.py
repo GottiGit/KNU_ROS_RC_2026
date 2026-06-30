@@ -128,3 +128,24 @@ stream.stop_stream()
 stream.close()
 w.close()
 p.terminate()
+
+# sine 함수로 음 출력하기
+
+import numpy as np
+import pyaudio
+
+volume = 0.5
+fs = 48000
+duration = 5.0
+f = 440.0       # 라 음
+
+data = (np.sin(2 * np.pi * np.arange(fs*duration) * f/fs)).astype(np.float32)
+
+p = pyaudio.PyAudio()
+stream = p.open(format=pyaudio.paFloat32, channels=1, rate=fs, output=True)
+stream.write(volume * data)
+
+stream.stop_stream()
+stream.close()
+p.terminate()
+
