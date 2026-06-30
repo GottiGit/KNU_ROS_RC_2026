@@ -71,11 +71,23 @@
 
 ---
 
-- 1교시: os, sys, urllib, time
-- 2교시:
+- 1교시: sys, urllib, time
+- 2교시: os, argv
 - 3교시: frame, package
-- 4교시:
-- 5교시:
-- 6교시:
-- 7교시:
-- 8교시:
+- 4교시: 가상환경 uv 설명 탁상시계 webview 구현
+- 5교시: threading, asyncio 설명
+- 6교시: flask server 구현 - click SSE 예제
+- 7교시: 미니 프로젝트(webview UI 구현)
+- 8교시: 미니 프로젝트(webview UI 구현)
+
+---
+
+2026-06-29
+
+---
+
+---
+
+2026-06-30
+
+---
